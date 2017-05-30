@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="styles/arrow.css" />
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >home Page</div>
+	<div class="col-lg-3 col-md-3">
+		<label>Name</label>
+		<input type="text" class="form-control" ng-model="refund.name" />
+		<p>{{refund.name}}</p>
+	</div>
+	<div class="col-lg-3 col-md-3">
+		<label>Amount</label>
+		<input type="text" class="form-control" ng-model="refund.amount" />
+		<p>{{refund.amount}}</p>
+	</div>
+
+	<div class="col-lg-12 col-md-12">
+		<span class="myButton" ng-click="getRefundName()">Submit</span>
+	</div>
+</div>

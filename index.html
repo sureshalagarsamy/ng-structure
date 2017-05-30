@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>:: ng-structure  ::</title>
+		<link rel="icon" type="image/gif" href="images/icon.ico" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="Stylesheet" type="text/css" href="styles/bootstrap-v3.3.1.css">
+		<link rel="Stylesheet" type="text/css" href="styles/common.css">
+		
+		<link rel="Stylesheet" type="text/css" href="styles/font-awesome-4.2.0/css/font-awesome.css">
+		
+		<script src="scripts/common/library/jquery-1.11.3.min.js"></script>
+		<script src="scripts/common/library/angularJS.min_1.4.0.js"></script>
+		<script src="scripts/common/library/angularJS-route.min_1.4.0.js"></script>
+	</head>
+
+	<body ng-app="portalApp">
+		<div>
+			<div id="top-menu" ng-include="'views/menu/top-menu.html'"></div>
+			<div id="ng-view">
+				<ng-view></ng-view>
+			</div>
+			<div id="bottom-menu" ng-include="'views/menu/bottom-menu.html'"></div>
+		</div>
+		
+		<!-- JAVASCRIPT LIBRARY MINIFIED VERSIONS -->
+		<script src="scripts/common/library/bootstrap.min_3.3.1.js"></script>
+		
+		<!-- GLOBAL JAVASCRIPT FILES -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/services.js"></script>
+
+		<!-- PAGE WISE SCRIPTS -->
+		<script src="scripts/controllers/homeController.js"></script>
+		<script src="scripts/controllers/catalogController.js"></script>
+		<script src="scripts/controllers/locationController.js"></script>
+	</body>
+</html>
